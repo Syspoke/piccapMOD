@@ -1,0 +1,2 @@
+[submodule "hyperion-webos"] path = hyperion-webos
+	url = https://github.com/syspoke/hyperion-webos
