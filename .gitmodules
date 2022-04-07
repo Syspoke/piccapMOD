@@ -1,2 +1,4 @@
-[submodule "hyperion-webos"] path = hyperion-webos
-	url = https://github.com/syspoke/hyperion-webos
+[submodule "hyperion-webos"]
+	path = hyperion-webos
+	url = https://github.com/Syspoke/hyperion-webos.git
+	branch = unicapture_video-mode-switcher
