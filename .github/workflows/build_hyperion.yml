@@ -100,7 +100,7 @@ jobs:
         run: |
           mkdir -p ./servicenative
           chmod +x webos_libs/hyperion-webos webos_libs/piccapautostart webos_libs/unicapture-test
-          cp webos_libs/. ./servicenative/
+          cp -r webos_libs/. ./servicenative/
 
       - name: Package
         run: mkdir build && ares-package ./dist/frontend/ ./servicenative -o ./build
