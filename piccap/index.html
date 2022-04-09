@@ -13,14 +13,13 @@
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Tauri:400">
     <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tauri:400">
 
-    <meta name="theme-color" content="#3f57ff">
+    <meta name="theme-color" content="#ffffff">
     <meta property="og:title" content="PicCap">
     <meta property="og:type" content="website">
 
     <script src="webOSTVjs-1.2.4/webOSTV.js" charset="utf-8"></script>
     <script src="webOSTVjs-1.2.4/webOSTV-dev.js" charset="utf-8"></script>
     <script type="text/javascript" src="js/script.js"></script>
-    
   </head>
   <body data-home-page="PicCap.html" data-home-page-title="PicCap" class="u-body u-overlap u-overlap-contrast u-palette-1-base">
     <section class="u-align-left u-clearfix u-palette-1-base u-section-1" id="sec-42c3">
@@ -36,13 +35,18 @@
                   <div class="u-align-left u-form u-form-1">
                     <form action="#" method="POST" class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form" source="custom" name="form" style="padding: 10px;">
                       <div class="u-form-group u-form-group-1">
-                        <label for="ip" class="u-label">Hyperion address</label>
-                        <input type="text" id="ip" name="ip" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="required" placeholder="192.168.178.2">
+                        <label for="address" class="u-label">Hyperion address</label>
+                        <input type="text" id="address" name="address" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="required" placeholder="127.0.0.1">
                       </div>
                       <div class="u-form-group u-form-textarea u-form-group-2">
                         <label for="port" class="u-label">Port</label>
-                        <input rows="4" cols="50" id="port" name="port" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="required" type="text" placeholder="19400 (default)">
+                        <input rows="4" cols="50" id="port" name="port" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="required" type="text" placeholder="19400">
                       </div>
+                      <div class="u-form-group u-form-textarea u-form-group-2">
+                        <label for="priority" class="u-label">Priority</label>
+                        <input rows="4" cols="50" id="priority" name="priority" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="required" type="text" placeholder="150">
+                      </div>
+
                       <div class="u-form-group u-form-group-3">
                         <!-- <label for="startdelay" class="u-label">Capture start delay</label>
                         <input type="text" placeholder="30 secounds" id="startdelay" name="startdelay" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="required"> -->
@@ -72,40 +76,55 @@
                     <form action="#" method="POST" class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form" source="custom" name="form" style="padding: 10px;">
                       <div class="u-form-group u-form-group-6">
                         <label for="width" class="u-label">Width</label>
-                        <input type="text" id="width" name="width" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="required" placeholder="360 (default)">
+                        <input type="text" id="width" name="width" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="required" placeholder="192">
                       </div>
                       <div class="u-form-group u-form-textarea u-form-group-7">
                         <label for="height" class="u-label">Height</label>
-                        <input rows="4" cols="50" id="height" name="height" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="required" type="text" placeholder="180 (default)">
+                        <input rows="4" cols="50" id="height" name="height" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="required" type="text" placeholder="96">
                       </div>
                       <div class="u-form-group u-form-group-8">
                         <label for="fps" class="u-label">Max FPS</label>
-                        <input type="text" placeholder="0 (unlimited | default) - 60" id="fps" name="fps" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white">
+                        <input type="text" placeholder="25" id="fps" name="fps" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white">
+                      </div>
+                      <div class="u-form-checkbox u-form-group u-form-group-10">
+                        <input type="checkbox" id="videocapture" name="videocapture" value="true" checked="checked">
+                        <label for="videocapture" class="u-label">Video capture</label>
                       </div>
                       <div class="u-form-group u-form-radiobutton u-form-group-9">
                         <div class="u-form-radio-button-wrapper">
-                          <input id="radioauto" type="radio" name="radiolib" value="auto">
-                          <label class="u-label" for="radioauto">Detect backend automatically (not working!)</label>
+                          <input id="radioauto" type="radio" name="radiolib" value="auto"checked="checked">
+                          <label class="u-label" for="radioauto">Detect backend automatically</label>
                           <br>
-                          <input id="radiolibdilevt" type="radio" name="radiolib" value="libdile_vt" checked="checked">
+                          <input id="radiolibdilevt" type="radio" name="radiolib" value="libdile_vt">
                           <label class="u-label" for="radiolibdilevt">Most older 2020- TVs (libdile_vt)</label>
                           <br>
-                          <input id="radiolibvt" type="radio" name="radiolib" value="libvt">
-                          <label class="u-label" for="radiolibvt">Old TV (libvt + libgm)</label>
-                          <br>
                           <input id="radionew" type="radio" name="radiolib" value="libvtcapture">
-                          <label class="u-label" for="radionew">New 2020+ TV (libvtcapture + libhalgal)</label>
+                          <label class="u-label" for="radionew">New 2020+ TV (libvtcapture)</label>
                           <br>
                         </div>
                       </div>
                       <div class="u-form-checkbox u-form-group u-form-group-10">
-                        <input type="checkbox" id="videocapture" name="videocapture" value="true" checked="checked">
-                        <label for="videocapture" class="u-label">Video capture | Setting only for new TVs</label>
+                        <input type="checkbox" id="graphiccapture" name="graphiccapture" value="true" class="u-border-1 u-border-grey-30 u-input-rectangle u-white">
+                        <label for="graphiccapture" class="u-label">Graphic capture (UI) </label>
                       </div>
+                      <div class="u-form-group u-form-radiobutton u-form-group-9">
+                        <div class="u-form-radio-button-wrapper">
+                          <input id="radiouiauto" type="radio" name="radiouilib" value="auto"checked="checked">
+                          <label class="u-label" for="radiouiauto">Detect UI_backend automatically</label>
+                          <br>
+                          <input id="radiolibgm" type="radio" name="radiouilib" value="libgm">
+                          <label class="u-label" for="radiolibgm">UI_backend (libgm)</label>
+                          <br>
+                          <input id="radiouinew" type="radio" name="radiouilib" value="libhalgal">
+                          <label class="u-label" for="radiouinew">UI_backend (libhalgal)</label>
+                          <br>
+                        </div>
                       <div class="u-form-checkbox u-form-group u-form-group-11">
-                        <input type="checkbox" id="graphiccapture" name="graphiccapture" value="true" class="u-border-1 u-border-grey-30 u-input-rectangle u-white" checked="checked">
-                        <label for="graphiccapture" class="u-label">Graphic capture (UI) | Setting only for new TVs</label>
+                        <input type="checkbox" id="vsync" name="vsync" value="true" class="u-border-1 u-border-grey-30 u-input-rectangle u-white">
+                        <label for="vsync" class="u-label">Vsync</label>
+                        <br>
                       </div>
+                      
                       <div class="u-align-center u-form-group u-form-submit u-form-group-12">
                         <input type="button" class="u-btn u-btn-round u-btn-submit u-button-style u-hover-palette-1-dark-1 u-palette-1-base u-radius-8 u-btn-5" onclick="save()" value="Save">
                       </div>
