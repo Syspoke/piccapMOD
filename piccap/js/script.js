@@ -92,16 +92,22 @@ async function getSettings() {
   Array.prototype.slice.call(document.querySelectorAll('input[name="radiolib"]')).forEach(el => {
     el.checked = (config.backend || 'auto') === el.value;
   });
+  Array.prototype.slice.call(document.querySelectorAll('input[name="radiouilib"]')).forEach(el => {
+    el.checked = (config.uibackend || 'auto') === el.value;
+  });
 
-  document.getElementById("ip").value = config.ip;
+
+  document.getElementById("address").value = config.address;
   document.getElementById("port").value = config.port;
+  document.getElementById("priority").value = config.priority;
   document.getElementById("width").value = config.width;
   document.getElementById("height").value = config.height;
   document.getElementById("fps").value = config.fps;
 
-  document.getElementById("videocapture").checked = config.captureVideo;
-  document.getElementById("graphiccapture").checked = config.captureUI;
+  document.getElementById("videocapture").checked = config.novideo;
+  document.getElementById("graphiccapture").checked = config.nogui;
   document.getElementById("autostart").checked = config.autostart;
+  document.getElementById("vsync").checked = config.vsync;
 
   console.info('Done!');
   getStatus();
@@ -128,19 +134,19 @@ window.resetconf = () => {
 
 window.save = async () => {
   const config = {
-    ip: document.getElementById("ip").value || undefined,
+    address: document.getElementById("address").value || undefined,
     port: parseInt(document.getElementById("port").value) || undefined,
+    priority: parseInt(document.getElementById("priority").value) || undefined,
     width: parseInt(document.getElementById("width").value) || undefined,
     height: parseInt(document.getElementById("height").value) || undefined,
     fps: parseInt(document.getElementById("fps").value) || 0,
     backend: document.querySelector('input[name=radiolib]:checked').value,
-    captureVideo: document.getElementById("videocapture").checked,
-    captureUI: document.getElementById("graphiccapture").checked,
+    uibackend: document.querySelector('input[name=radiouilib]:checked').value,
+    novideo: document.getElementById("videocapture").checked,
+    nogui: document.getElementById("graphiccapture").checked,
     autostart: document.getElementById("autostart").checked,
+    vsync: document.getElementById("vsync").checked
   };
-
-  if (config.backend === 'auto') config.backend = null;
-
   console.info(config);
 
   document.getElementById("servicestatus").innerHTML = "Saving..";
