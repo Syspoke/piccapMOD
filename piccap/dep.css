@@ -20266,7 +20266,7 @@
   li.active > .u-button-style.u-button-style.u-color-1,
   li.active > .u-button-style.u-button-style.u-color-1[class*="u-border-"] {
     color: #ffffff !important;
-    background-color: #1f3bff !important;
+    background-color: #fe0000 !important;
   }
   .u-hover-color-1:hover,
   .u-hover-color-1[class*="u-border-"]:hover,
@@ -20474,7 +20474,7 @@
   li.active > .u-button-style.u-button-style.u-color-1-base,
   li.active > .u-button-style.u-button-style.u-color-1-base[class*="u-border-"] {
     color: #ffffff !important;
-    background-color: #1f3bff !important;
+    background-color: #fe0000 !important;
   }
   .u-hover-color-1-base:hover,
   .u-hover-color-1-base[class*="u-border-"]:hover,
@@ -22346,7 +22346,7 @@
   li.active > .u-button-style.u-button-style.u-palette-1,
   li.active > .u-button-style.u-button-style.u-palette-1[class*="u-border-"] {
     color: #ffffff !important;
-    background-color: #1f3bff !important;
+    background-color: #fe0000 !important;
   }
   .u-hover-palette-1:hover,
   .u-hover-palette-1[class*="u-border-"]:hover,
@@ -22421,7 +22421,7 @@
   li.active > a.u-button-style.u-button-style.u-active-palette-1-light-1,
   li.active > a.u-button-style.u-button-style.u-active-palette-1-light-1[class*="u-border-"] {
     color: #ffffff !important;
-    background-color: #7989ff !important;
+    background-color: #ffffff !important;
   }
   a.u-link.u-hover-palette-1-light-1:hover {
     color: #7989ff !important;
@@ -22554,7 +22554,7 @@
   li.active > .u-button-style.u-button-style.u-palette-1-base,
   li.active > .u-button-style.u-button-style.u-palette-1-base[class*="u-border-"] {
     color: #ffffff !important;
-    background-color: #1f3bff !important;
+    background-color: #fe0000 !important;
   }
   .u-hover-palette-1-base:hover,
   .u-hover-palette-1-base[class*="u-border-"]:hover,
@@ -25612,7 +25612,7 @@
   .u-button-style.u-border-color-1:hover,
   .u-button-style.u-border-color-1:focus {
     border-color: transparent !important;
-    color: #1f3bff !important;
+    color: #fe0000 !important;
     background-color: transparent !important;
   }
   .u-border-hover-color-1:hover,
@@ -25632,7 +25632,7 @@
     border-color: #000000 !important;
   }
   .u-link.u-border-color-1[class*="u-border-"]:hover {
-    border-color: #1f3bff !important;
+    border-color: #fe0000 !important;
   }
   .u-border-color-1-light-1,
   .u-separator-color-1-light-1:after {
@@ -25752,7 +25752,7 @@
   .u-button-style.u-border-color-1-base:hover,
   .u-button-style.u-border-color-1-base:focus {
     border-color: transparent !important;
-    color: #1f3bff !important;
+    color: #fe0000 !important;
     background-color: transparent !important;
   }
   .u-border-hover-color-1-base:hover,
@@ -25772,7 +25772,7 @@
     border-color: #000000 !important;
   }
   .u-link.u-border-color-1-base[class*="u-border-"]:hover {
-    border-color: #1f3bff !important;
+    border-color: #fe0000 !important;
   }
   .u-border-color-2-dark-3,
   .u-separator-color-2-dark-3:after {
@@ -27012,7 +27012,7 @@
   .u-button-style.u-border-palette-1:hover,
   .u-button-style.u-border-palette-1:focus {
     border-color: transparent !important;
-    color: #1f3bff !important;
+    color: #fe0000 !important;
     background-color: transparent !important;
   }
   .u-border-hover-palette-1:hover,
@@ -27032,7 +27032,7 @@
     border-color: #000000 !important;
   }
   .u-link.u-border-palette-1[class*="u-border-"]:hover {
-    border-color: #1f3bff !important;
+    border-color: #fe0000 !important;
   }
   .u-border-palette-1-light-1,
   .u-separator-palette-1-light-1:after {
@@ -27152,7 +27152,7 @@
   .u-button-style.u-border-palette-1-base:hover,
   .u-button-style.u-border-palette-1-base:focus {
     border-color: transparent !important;
-    color: #1f3bff !important;
+    color: #fe0000 !important;
     background-color: transparent !important;
   }
   .u-border-hover-palette-1-base:hover,
@@ -27172,7 +27172,7 @@
     border-color: #000000 !important;
   }
   .u-link.u-border-palette-1-base[class*="u-border-"]:hover {
-    border-color: #1f3bff !important;
+    border-color: #fe0000 !important;
   }
   .u-border-palette-2-dark-3,
   .u-separator-palette-2-dark-3:after {
@@ -29285,7 +29285,7 @@
   a.u-button-style.u-button-style.u-text-color-1[class*="u-border-"]:active,
   a.u-button-style.u-button-style.u-text-color-1.active,
   a.u-button-style.u-button-style.u-text-color-1[class*="u-border-"].active {
-    color: #1f3bff !important;
+    color: #fe0000 !important;
   }
   a.u-button-style:hover > .u-text-hover-color-1,
   a.u-button-style:hover > .u-text-hover-color-1[class*="u-border-"],
@@ -29313,7 +29313,7 @@
     fill: #000000;
   }
   .u-link.u-text-color-1:hover {
-    color: #1f3bff !important;
+    color: #fe0000 !important;
   }
   a.u-link.u-text-hover-color-1:hover {
     color: #000000 !important;
@@ -29469,7 +29469,7 @@
   a.u-button-style.u-button-style.u-text-color-1-base[class*="u-border-"]:active,
   a.u-button-style.u-button-style.u-text-color-1-base.active,
   a.u-button-style.u-button-style.u-text-color-1-base[class*="u-border-"].active {
-    color: #1f3bff !important;
+    color: #fe0000 !important;
   }
   a.u-button-style:hover > .u-text-hover-color-1-base,
   a.u-button-style:hover > .u-text-hover-color-1-base[class*="u-border-"],
@@ -29497,7 +29497,7 @@
     fill: #000000;
   }
   .u-link.u-text-color-1-base:hover {
-    color: #1f3bff !important;
+    color: #fe0000 !important;
   }
   a.u-link.u-text-hover-color-1-base:hover {
     color: #000000 !important;
@@ -31125,7 +31125,7 @@
   a.u-button-style.u-button-style.u-text-palette-1[class*="u-border-"]:active,
   a.u-button-style.u-button-style.u-text-palette-1.active,
   a.u-button-style.u-button-style.u-text-palette-1[class*="u-border-"].active {
-    color: #1f3bff !important;
+    color: #fe0000 !important;
   }
   a.u-button-style:hover > .u-text-hover-palette-1,
   a.u-button-style:hover > .u-text-hover-palette-1[class*="u-border-"],
@@ -31153,7 +31153,7 @@
     fill: #000000;
   }
   .u-link.u-text-palette-1:hover {
-    color: #1f3bff !important;
+    color: #fe0000 !important;
   }
   a.u-link.u-text-hover-palette-1:hover {
     color: #000000 !important;
@@ -31309,7 +31309,7 @@
   a.u-button-style.u-button-style.u-text-palette-1-base[class*="u-border-"]:active,
   a.u-button-style.u-button-style.u-text-palette-1-base.active,
   a.u-button-style.u-button-style.u-text-palette-1-base[class*="u-border-"].active {
-    color: #1f3bff !important;
+    color: #fe0000 !important;
   }
   a.u-button-style:hover > .u-text-hover-palette-1-base,
   a.u-button-style:hover > .u-text-hover-palette-1-base[class*="u-border-"],
@@ -31337,7 +31337,7 @@
     fill: #000000;
   }
   .u-link.u-text-palette-1-base:hover {
-    color: #1f3bff !important;
+    color: #fe0000 !important;
   }
   a.u-link.u-text-hover-palette-1-base:hover {
     color: #000000 !important;
@@ -34131,7 +34131,7 @@
           .u-image:not(.u-shading) > .u-container-layout > a:hover,
           a:hover
           {
-          color: #1f3bff;
+          color: #fe0000;
           }
           .u-overlap.u-overlap-transparent:not(.u-overlap-contrast) .u-header :not(.u-nav-item) > .u-btn,
           .u-gradient > .u-container-layout > .u-btn,
@@ -34146,7 +34146,7 @@
           .u-image:not(.u-shading) > .u-container-layout > .u-btn:hover,
           .u-btn:hover
           {
-          background-color: #1f3bff;
+          background-color: #fe0000;
           color: #e6e6e6;
           }
           .u-overlap.u-overlap-transparent:not(.u-overlap-contrast) .u-header :not(.u-nav-item) > .u-btn:focus,
@@ -34154,7 +34154,7 @@
           .u-image:not(.u-shading) > .u-container-layout > .u-btn:focus,
           .u-btn:focus
           {
-          background-color: #1f3bff;
+          background-color: #fe0000;
           color: #e6e6e6;
           }
           .u-overlap.u-overlap-transparent:not(.u-overlap-contrast) .u-header :not(.u-nav-item) > .u-btn:active,
@@ -34162,7 +34162,7 @@
           .u-image:not(.u-shading) > .u-container-layout > .u-btn:active,
           .u-btn:active
           {
-          background-color: #1f3bff;
+          background-color: #fe0000;
           color: #e6e6e6;
           }
           .u-overlap.u-overlap-transparent:not(.u-overlap-contrast) .u-header :not(.u-nav-item) > blockquote,
